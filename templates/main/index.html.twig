@@ -269,7 +269,11 @@
 			font-weight: 600;
 			z-index: 15;
 			padding: 6px 10px;
+<<<<<<< HEAD
 
+=======
+			text-align: left;
+>>>>>>> 5a9f421 (second commit)
 			border-radius: 5px;
 		}
 
@@ -352,6 +356,7 @@
 				clear: both;
 				visibility: hidden;
 			}
+<<<<<<< HEAD
 
 			.timeline .hexa {
 				left: -28px;
@@ -359,6 +364,15 @@
 				top: 8px;
 			}
 
+=======
+
+			.timeline .hexa {
+				left: -28px;
+				right: auto;
+				top: 8px;
+			}
+
+>>>>>>> 5a9f421 (second commit)
 			.timeline .direction-l .hexa {
 				left: auto;
 				right: -28px;
@@ -560,7 +574,11 @@
 {% endblock %}
 {% block body %}
 {% include "component/_nav.html.twig" %}
+<<<<<<< HEAD
 	<section class="about d-block" id="about">
+=======
+	<section class="about d-block">
+>>>>>>> 5a9f421 (second commit)
 		<div class="container">
 			<div class="row">
 				<div class=" col-12 col-lg-6">
@@ -587,7 +605,11 @@
 						<img src="{{ asset('build/github.svg') }}" alt="" width="50">
 					</div>
 				</div>
+<<<<<<< HEAD
 				<div class="col-lg-6 col-12">
+=======
+				<div class="col-6">
+>>>>>>> 5a9f421 (second commit)
 					<img src="https://picsum.photos/seed/picsum/400/500" alt="" style="float: right;">
 				</div>
 
@@ -595,11 +617,19 @@
 		</div>
 	</section>
 
+<<<<<<< HEAD
 	<section class="skills" id="skill">
 		<div class="container">
 			<div class="row">
 				<h2 class="text-center skills-title">Mes Compétences</h2>
 				<div class=" col-12 col-lg-6 d-flex flex-column justify-content-center">
+=======
+	<section class="skills" id="skills">
+		<div class="container">
+			<div class="row">
+				<h2 class="text-center skills-title">Mes Compétences</h2>
+				<div class=" col-10 col-lg-6 d-flex flex-column justify-content-center">
+>>>>>>> 5a9f421 (second commit)
 					<div class="container-progress d-flex flex-column">
 						<h4 class="text-center">PHP | POO | MVC</h4>
 						<div class="progress">
@@ -626,7 +656,11 @@
 						</div>
 					</div>
 				</div>
+<<<<<<< HEAD
 				<div class=" col-12 col-lg-6 d-flex flex-column justify-content-center">
+=======
+				<div class=" col-10 col-lg-6 d-flex flex-column justify-content-center">
+>>>>>>> 5a9f421 (second commit)
 					<div class="container-progress d-flex flex-column">
 						<h4 class="text-center">HTML | CSS</h4>
 						<div class="progress">
@@ -657,7 +691,11 @@
 		</div>
 	</section>
 
+<<<<<<< HEAD
 	<section class="experiences" id="exp">
+=======
+	<section class="experiences">
+>>>>>>> 5a9f421 (second commit)
 		<div class="container">
 			<div class="row">
 			<h2 class="text-center skills-title">Mes expériences</h2>
@@ -725,16 +763,25 @@
 			</div>
 		</div>
 	</section>
+<<<<<<< HEAD
 	<section id="work">
 	<div class="d-flex justify-content-center ">
 	<h2 class="text-center skills-title">Mes expériences</h2>
 	<a href="{{ path('project_index') }}"><button class="primary">Show all projects</button></a>
 	</div>
+=======
+	<section id="projets">
+	<h2 class="text-center skills-title">Mes expériences</h2>
+>>>>>>> 5a9f421 (second commit)
 		<div class="container-projects">
 		
 			{% for project in projects %}
 				<div class="card"> 
+<<<<<<< HEAD
 					<div class="box" style="background: url('{{ project.imageurl }}')fixed; background-size: cover ;">
+=======
+					<div class="box" style="background: url('{{ project.imageurl }}');">
+>>>>>>> 5a9f421 (second commit)
 						<div class="content">
 							<h3>{{ project.title }}</h3>
 							<p> {{ project.description }}</p>
