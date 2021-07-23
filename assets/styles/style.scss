@@ -1,0 +1,160 @@
+/* Style général */
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f3f3f3;
+}
+
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+hr{
+    width: 80px;
+    height: 5px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover, 
+a:focus, 
+a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Header */
+
+
+header{
+    width: 100%;
+    height: 650px;
+    padding-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    
+}
+
+/* Logo */
+.logonavbar .logo h1{
+    font-size: 40px; /* taille de la police des liens du menu responsive */
+    font-weight: 400; /* Ã©paisseur de la police */
+    line-height: 40px;
+    color: #282828;
+}
+
+.logonavbar .logo h1 span{
+    font-weight: 700; /* Ã©paisseur de la police */
+} 
+
+.span_web{
+    font-weight: 700;
+}
+
+.logonavbar .logo hr{
+    background: #282828;
+    margin: 0;
+    height: 5px;
+}
+
+.logonavbar .logo h2{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #282828;
+    padding-top: 30px;
+}
+
+/* Navbar */
+.logonavbar .navbar ul{
+    float: right;
+}
+
+.logonavbar .navbar ul li{
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-left: 48px;
+}
+
+.logonavbar .navbar ul li a{
+    color: #282828;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.logonavbar .navbar ul li a:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;;
+    border-bottom: 5px solid #546A79;
+    transition: 0.4s;
+}
+
+.logonavbar .navbar ul li a:hover:after{
+    width: 100%;
+}
+
+.logonavbar .navbar img.menu{
+    width: 40px;
+    float: right;
+}
+
+h1.catchphrase{
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #282828;
+    margin-top: 70px;
+    text-align: center;
+    margin: auto 70;
+    padding-top: 100px;
+}
+
+h1.catchphrase span{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #282828;
+    margin: auto;
+}
+
+a.down-arrow{
+    display: block;
+    width: 65px;
+    margin: auto;
+}
+
+a.down-arrow img{
+    margin-top: 35px;
+    width: 100%;
+}
+
+/* Animation de la fleche */
+#down-arrow{
+    position: relative;
+    animation: bounce 3s ease-in-out infinite alternate;
+}
+    
+@keyframes bounce{
+     from {top: 20px;}
+     50%  {top: 70px;}
+     to   {top: 20px;}
+}
+
+/* a propos*/
+.about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
