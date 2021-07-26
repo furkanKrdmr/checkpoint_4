@@ -269,7 +269,6 @@
 			font-weight: 600;
 			z-index: 15;
 			padding: 6px 10px;
-			text-align: left;
 			border-radius: 5px;
 		}
 
@@ -560,7 +559,7 @@
 {% endblock %}
 {% block body %}
 {% include "component/_nav.html.twig" %}
-	<section class="about d-block">
+	<section class="about d-block" id="about">
 		<div class="container">
 			<div class="row">
 				<div class=" col-12 col-lg-6">
@@ -587,7 +586,7 @@
 						<img src="{{ asset('build/github.svg') }}" alt="" width="50">
 					</div>
 				</div>
-				<div class="col-6">
+				<div class="col-lg-6 col-12">
 					<img src="https://picsum.photos/seed/picsum/400/500" alt="" style="float: right;">
 				</div>
 
@@ -595,11 +594,11 @@
 		</div>
 	</section>
 
-	<section class="skills" id="skills">
+	<section class="skills" id="skill">
 		<div class="container">
 			<div class="row">
 				<h2 class="text-center skills-title">Mes Compétences</h2>
-				<div class=" col-10 col-lg-6 d-flex flex-column justify-content-center">
+				<div class=" col-12 col-lg-6 d-flex flex-column justify-content-center">
 					<div class="container-progress d-flex flex-column">
 						<h4 class="text-center">PHP | POO | MVC</h4>
 						<div class="progress">
@@ -626,7 +625,7 @@
 						</div>
 					</div>
 				</div>
-				<div class=" col-10 col-lg-6 d-flex flex-column justify-content-center">
+				<div class=" col-12 col-lg-6 d-flex flex-column justify-content-center">
 					<div class="container-progress d-flex flex-column">
 						<h4 class="text-center">HTML | CSS</h4>
 						<div class="progress">
@@ -657,7 +656,7 @@
 		</div>
 	</section>
 
-	<section class="experiences">
+	<section class="experiences" id="exp">
 		<div class="container">
 			<div class="row">
 			<h2 class="text-center skills-title">Mes expériences</h2>
@@ -725,13 +724,16 @@
 			</div>
 		</div>
 	</section>
-	<section id="projets">
+	<section id="work">
+	<div class="d-flex justify-content-center ">
 	<h2 class="text-center skills-title">Mes expériences</h2>
+	<a href="{{ path('project_index') }}"><button class="primary">Show all projects</button></a>
+	</div>
 		<div class="container-projects">
 		
 			{% for project in projects %}
 				<div class="card"> 
-					<div class="box" style="background: url('{{ project.imageurl }}');">
+					<div class="box" style="background: url('{{ project.imageurl }}')fixed; background-size: cover ;">
 						<div class="content">
 							<h3>{{ project.title }}</h3>
 							<p> {{ project.description }}</p>
